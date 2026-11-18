@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:30px;
+}
+.object{
+    display:block;
+    margin: auto;
+    background-color: white;  
+    border: 1px solid black;
+    width: 300px;
+    height:600px;
+    padding:20px;
+    text-align: center;
+}
+img{
+    border-radius: 50%;
+    width: 30%;
+}
+.object2{
+    display:flex ;
+    justify-content: space-between;
+    padding: 5px;
+}
+.object3{
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+}
+.object3 img{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.button{
+    border: 1px solid black ;
+    border-radius: 30px;
+    padding :4px;
+    margin: 30px;
+    size: 25px;
+}
+
+.button:hover{
+    background-color: grey;
+}
