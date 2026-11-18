@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        .object{
+            display: grid;
+            grid-template-columns: auto;
+        
+            margin: 15px;
+            padding: 15px;
+
+        }
+        .footer{
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+
+        }
+        .Main{
+            background-color: rgb(76, 160, 132);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        .Sidebar{
+            background-color: rgb(76, 160, 132);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        @media (Min-width:600px) and (Max-width:900px) {
+            .object{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (Min-width:900px) {
+            .object{
+                grid-template-columns: 1fr 300px;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">Header</header>
+    <div class="object">
+        <div class="Main">Main Content</div>
+        <div class="Sidebar">Sidebar</div>
+    </div>
+    <footer class="footer">Footer</footer>
+</body>
+</html>

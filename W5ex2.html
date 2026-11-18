@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo{
+            font-size:45px ;
+            font-weight: bold;
+            margin: 15px;
+            padding: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .menu-icon {
+            display: none;
+            font-size: 25px;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: none;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+
+
+    </style>
+  
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div> 
+        
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+         
+        <div class="menu-icon">☰</div>        
+    </nav>
+</body>
+</html>

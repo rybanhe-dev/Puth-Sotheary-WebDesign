@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* 1 */
+    input:focus {
+        border: 2px solid blue;
+        outline: none;
+    }
+    /* 2 */
+    button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    button:hover {
+        background-color: red;
+    }
+    /* 3 */
+    .search {
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px gray;
+    }
+    /* 4 */
+    input:checked + label {
+        color: green;
+        font-weight: bold;
+    }
+   
+
+</style>
+</head>
+<body>
+    <h3>Mini Challenge 1: Highlight input when focused</h3>
+    <input type="text" placeholder="Enter your name">
+
+    <h3>Mini Challenge 2: Change button background color on hover</h3>
+    <button>Click Me</button>
+
+    <h3>Mini Challenge 3: Search bar with rounded corners and shadow</h3>
+    <input type="text" placeholder="Search..." class="search">
+
+    <h3>Mini Challenge 4: Different style when checkbox is checked</h3>
+    <input type="checkbox" id="check">
+    <label for="check">I agree</label>
+
+</body>
+</html>

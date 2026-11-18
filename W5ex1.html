@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .items{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+            row-gap: 10px;
+            column-gap: 10px;
+
+        }
+
+        .item{
+            background-color:salmon;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 1000px){
+            .items{
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+        
+        @media (max-width: 768px){
+            .items{
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="items">
+        <div class="item a">item1</div>
+        <div class="item b">item2</div>
+        <div class="item c">item3</div>  
+        <div class="item d">item4</div>
+        <div class="item e">item5</div>
+        <div class="item f">item6</div>  
+        <div class="item g">item7</div>  
+        <div class="item h">item8</div>  
+    </div>
+</body>
+</html>
